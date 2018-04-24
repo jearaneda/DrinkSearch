@@ -1,0 +1,4 @@
+#Wed Feb 28 17:26:53 CLST 2018
+base.0=/Users/macbook/Desktop/drink/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/macbook/Desktop/drink/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

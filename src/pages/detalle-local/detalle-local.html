@@ -1,0 +1,45 @@
+<ion-header>
+
+</ion-header>
+<ion-content>
+  <ion-card>
+
+    <ion-card-content>
+      <p>{{locacion.direccion}} está a {{locacion.distance}} kms.</p>
+
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Likes</div>
+          </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-down"></ion-icon>
+            <div>6 Likes</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+    <p style="font-weight:bold;"> Ofertas </p>
+    <p> {{locacion.oferta}}</p>
+
+  </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-content>
+    <p> Cigarros: {{cigs}} </p>
+    </ion-card-content>
+  </ion-card>
+
+
+      <button ion-button round outline  color="primary" style="margin-top: 20px;"(click)="goDelivery()">Necesito delivery</button>
+
+
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Contacto</ion-title>
+    </ion-navbar>
+   </ion-header>
+
+
+   <ion-content  scroll="false" class="background" padding>
+
+     <button ion-button icon-left color="facebook" style="margin-bottom: 50px;" (click)="login()">
+       <ion-icon name="logo-facebook"></ion-icon>
+       Login with Facebook
+
+     </button>
+
+
+     <form [formGroup]="contactoForm" (ngSubmit)="GuardaContacto()" >
+    <ion-list   >
+        <ion-item>
+      <ion-input formControlName="name" type="text" placeholder="Nombre" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-input formControlName="fono" type="text"  placeholder="Fono"></ion-input>
+    </ion-item>
+<ion-item>
+        <ion-input formControlName="email" type="text" placeholder="Correo"></ion-input>
+    </ion-item>
+
+<ion-item>
+        <ion-input formControlName="password" type="password" validateEqual="password"  placeholder="Password"></ion-input>
+    </ion-item>
+
+<ion-item>
+          <ion-input formControlName="passwordconf" type="password" validateEqual="passwordConfirm" placeholder="Confirmar password"></ion-input>
+        </ion-item>
+
+              <button ion-button full color="primary" type="submit" [disabled]="contactoForm.invalid" (click)="goTienda()">Siguiente</button>
+
+        </ion-list>
+        </form>
+
+        <button ion-button full color="primary" (click)="goLogin()">Ya tengo cuenta</button>
+
+
+    </ion-content>

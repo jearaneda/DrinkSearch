@@ -1,0 +1,30 @@
+
+
+
+  <ion-content>
+      <ion-card *ngFor="let locacion of locaciones.data" (click)="detalleLocal(locacion)">
+              <img src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location={{locacion.latitud}}, {{locacion.longitud}} &pitch=-0.76">
+          <ion-item>
+              <ion-avatar item-start>
+                  <img src="assets/imgs/wine-icon.jpg">
+              </ion-avatar>
+              <span>{{locacion.nombre}} a {{locacion.distance}} kms</span>
+          </ion-item>
+
+          <ion-row>
+              <ion-col>
+                  <button ion-button icon-left clear small>
+                      <ion-icon name="thumbs-up"></ion-icon>
+                      <div>12 Likes</div>
+                  </button>
+              </ion-col>
+              <ion-col text-right>
+                  <button ion-button icon-left clear small>
+                      <ion-icon name="thumbs-down"></ion-icon>
+                      <div>6 dislikes</div>
+                  </button>
+              </ion-col>
+          </ion-row>
+      </ion-card>
+
+  </ion-content>

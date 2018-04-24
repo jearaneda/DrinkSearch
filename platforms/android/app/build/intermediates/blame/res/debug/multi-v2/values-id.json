@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/macbook/Desktop/drink/platforms/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
+            "map": [
+                {
+                    "source": "/Users/macbook/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.14.1.aar/7feabb60df4fdf0743040b7dcff6a04d/res/values-id/values-id.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,226,351,465,564,631,699,758,829,900,997,1070,1143,1227,1330,1394,1461",
+                        "endColumns": "170,124,113,98,66,67,58,70,70,96,72,72,83,102,63,66,138",
+                        "endOffsets": "221,346,460,559,626,694,753,824,895,992,1065,1138,1222,1325,1389,1456,1595"
+                    }
+                }
+            ]
+        }
+    ]
+}

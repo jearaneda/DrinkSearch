@@ -1,0 +1,42 @@
+<!--
+  Generated template for the Socio2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <ion-title>Informacion Conductor</ion-title>
+    </ion-navbar>
+
+  </ion-header>
+
+  <ion-content padding>
+
+
+
+      <form [formGroup]="autoForm" (ngSubmit)="GuardaTienda()" novalidate>
+
+
+
+              <ion-input formControlName="Direccion" type="text" placeholder="Patente"></ion-input>
+
+              <ion-input formControlName="Comuna" type="text" placeholder="Modelo"></ion-input>
+
+              <ion-input formControlName="Ciudad" type="text" placeholder="Año"></ion-input>
+
+              <ion-input formControlName="Pais" type="text" placeholder="Color"></ion-input>
+
+              <ion-input formControlName="Oferta" type="text" placeholder="Comunas en las que trabajas"></ion-input>
+
+            <button ion-button block outline color="light">Agregar tienda</button>
+          <!--  <p>OR</p>
+            <button ion-button block color="facebook">
+              <ion-icon name="logo-facebook"></ion-icon> Login con facebook
+            </button> -->
+      </form>
+
+
+     <!-- <button class="bottom" ion-button clear full color="light">Don't have an account? Sign up</button> -->
+    </ion-content>
